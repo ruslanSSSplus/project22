@@ -1,9 +1,9 @@
 import React from "react";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Main} from "../Pages/Main/Main";
-import {Beer} from "../Pages/Third/Beer";
+import {Beer} from "../Pages/Beer/Beer";
 import {Second} from "../Pages/Second/Second";
-import {BeerPage} from "../Pages/Third/BeerPage/BeerPage";
+import {BeerPage} from "../Pages/Beer/BeerPage/BeerPage";
 
 
 export const AllRoutes = ({theme}) => {

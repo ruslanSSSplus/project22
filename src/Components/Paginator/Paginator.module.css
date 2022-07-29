@@ -13,7 +13,7 @@
 
 }
 .pageNumber:hover{
-    background-color: pink;
+    background-color: #adc6ff;
 }
 
 .pageNumber.selectedPage{

@@ -1,4 +1,4 @@
-import {beerAPI} from "../../API/beer";
+import {beerAPI} from "../../API/beerAPI";
 
 
 const PUT_BEERS = 'BEER/PUT_BEERS';
