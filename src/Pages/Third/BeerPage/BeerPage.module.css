@@ -1,0 +1,61 @@
+.png
+{
+    width: 140px;
+    height: 200px;
+}
+.eachBeer{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+
+    grid-template-areas:
+    'a i';
+
+    grid-template-columns: 200px 1fr ;
+    grid-gap: 15px;
+
+}
+.descr{
+   padding-top: 30px;
+}
+.des{
+    color: grey;
+}
+
+
+
+.name
+{
+    color: red;
+    font-size: 25px;
+}
+.png
+{
+    margin-left: 40px;
+    margin-top: 12px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.form
+{
+    margin-left: 40px;
+}
+.paginator
+{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.all{
+    padding-top: 20px;
+
+}
+
+.png1{
+    top: 0;
+    right: 0;
+    margin-top: 40px;
+    position: fixed;
+    height: 1060px;
+    overflow:hidden;
+    z-index: -1;
+}

@@ -1,0 +1,35 @@
+
+
+
+.paginator{
+
+    cursor: pointer;
+}
+.pageNumber
+{
+    padding: 3px;
+    border: 1px solid grey;
+    font-size: 15px;
+
+}
+.pageNumber:hover{
+    background-color: pink;
+}
+
+.pageNumber.selectedPage{
+    font-weight: bold;
+    border-color: black;
+
+}
+.back{
+    font-size: 15px;
+ margin-right: 5px;
+}
+.last{
+    font-size: 15px;
+ margin-left: 5px;
+}
+.next{
+    font-size: 15px;
+    margin-left: 5px;
+}
