@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/project22/static/css/main.82f631a9.css",
+    "main.js": "/project22/static/js/main.9b0080e8.js",
+    "static/js/787.28cb0dcd.chunk.js": "/project22/static/js/787.28cb0dcd.chunk.js",
+    "static/media/baltika.png": "/project22/static/media/baltika.a58fd285e62ae64e97ba.png",
+    "static/media/svetlay.png": "/project22/static/media/svetlay.52b3a67cae0e0aaebd17.png",
+    "index.html": "/project22/index.html",
+    "main.82f631a9.css.map": "/project22/static/css/main.82f631a9.css.map",
+    "main.9b0080e8.js.map": "/project22/static/js/main.9b0080e8.js.map",
+    "787.28cb0dcd.chunk.js.map": "/project22/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82f631a9.css",
+    "static/js/main.9b0080e8.js"
+  ]
+}
