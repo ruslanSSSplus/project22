@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react';
-import {yesNoAPI} from "../../API/yesNoAPI";
+import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {getYesNoThunkCreater} from "../../Redux/Reducers/yesNoReducer";
 import classes from './Main.module.css'

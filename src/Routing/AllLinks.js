@@ -1,14 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {useNavigate} from "react-router-dom";
 import classes from "../App.module.css";
 
 
-import {useDispatch} from "react-redux";
 
 export const AllLinks = () => {
-    const navigate = useNavigate();
-    const dispatch = useDispatch()
+
 
 
     return (<div className={classes.menu}>

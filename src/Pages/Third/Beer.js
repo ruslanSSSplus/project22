@@ -8,7 +8,7 @@ import classes from './Beer.module.css'
 import sveti from '../../Assets/svetlay.png'
 
 
-export const Beer = (props) => {
+export const Beer = () => {
 
 
     const dispatch = useDispatch()
@@ -49,7 +49,7 @@ export const Beer = (props) => {
         <div className={classes.el} >
     {beerElements}
         </div>
-            <img src={sveti} className={classes.png1}/>
+            <img src={sveti} className={classes.png1} alt={'beer'}/>
         </div>);
 
     }

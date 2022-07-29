@@ -44,7 +44,7 @@ export const EachBeer= (props) => {
 
     return <div className={window.innerWidth > 800 ? classes.eachBeer : classes.eachBeerMobile} onClick={() => redir(props.id)} data-aos="fade-right">
           <div>
-              <img alt={'sorry image not found'} src={props.posterImage === null ? baltika : props.posterImage} className={classes.png} />
+              <img alt={'beer1'} src={props.posterImage === null ? baltika : props.posterImage} className={classes.png} />
           </div>
        <div className={classes.descr}>
            <h2 > <span className={classes.name}> {props.name === undefined? "can't find name" : props.name} </span> </h2>

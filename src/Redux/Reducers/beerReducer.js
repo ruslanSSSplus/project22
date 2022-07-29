@@ -1,4 +1,3 @@
-import {yesNoAPI} from "../../API/yesNoAPI";
 import {beerAPI} from "../../API/beer";
 
 
