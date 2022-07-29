@@ -24,7 +24,7 @@
     'n'
     'i'
     's';
-    grid-template-rows: 50px 500px 1fr;
+    grid-template-rows: 100px 500px 1fr;
     grid-gap: 15px;
 }
 .imgBeerMobile{
@@ -45,6 +45,12 @@
 }
 .name{
     font-size: 50px;
+    font-weight: bold;
+    grid-area: n;
+    text-align: center;
+}
+.nameMobile{
+    font-size: 40px;
     font-weight: bold;
     grid-area: n;
     text-align: center;

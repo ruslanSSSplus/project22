@@ -20,7 +20,7 @@ export const BeerPage= () => {
 
         <img src={exactBeer.image_url} alt={'img'} className={window.innerWidth > 800 ?
             classes.imgBeer :  classes.imgBeerMobile}/>
-        <div  className={classes.name}> {exactBeer.name}</div>
+        <div  className={window.innerWidth > 800 ? classes.name : classes.nameMobile}> {exactBeer.name}</div>
         <div className={classes.info}>
             <span className={classes.txt}> Описание </span>
             <div  className={classes.description}> {exactBeer.description} </div>
