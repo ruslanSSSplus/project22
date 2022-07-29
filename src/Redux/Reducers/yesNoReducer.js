@@ -1,23 +1,28 @@
+import {yesNoAPI} from "../../API/yesNoAPI";
 
 
-const IS_LOADING = 'MEMBERS/IS_LOADING';
+const PUT_IMAGE = 'YESNO/PUT_IMAGE';
 
 let initialState = {
-    members: [], isLoading: true
+    answerImage: 'http://ic.pics.livejournal.com/lyu_sanna/50534903/193299/193299_300.jpg',
 }
 
 
 const yesNoReducer = (state = initialState, action) => {
     switch (action.type) {
-
+        case PUT_IMAGE:
+            return {...state, answerImage: action.data}
         default:
             return state;
     }
 }
 
-export const getMembersThunkCreater = () => {
-    return async (dispatch) => {
 
+
+export const getYesNoThunkCreater = () => {
+    return async (dispatch) => {
+        const response = await yesNoAPI.getYesNo()
+        dispatch(actions.putImage(response))
 
     }
 }
@@ -25,8 +30,8 @@ export const getMembersThunkCreater = () => {
 
 
 export const actions = {
-    isLoadingDone: (data) => ({
-        type: IS_LOADING, data
+    putImage: (data) => ({
+        type: PUT_IMAGE, data
     })
 }
 

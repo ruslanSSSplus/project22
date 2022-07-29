@@ -1,16 +1,19 @@
 import React, {useEffect, useState} from 'react';
-import classes from "./Beer.module.css";
+import classes from "./EachBeer.module.css";
 import {useDispatch} from "react-redux";
 import {useNavigate} from "react-router-dom";
-import {actions} from "../../Redux/Reducers/beerReducer";
-
-
+import {actions} from "../../../Redux/Reducers/beerReducer";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import baltika from '../../../Assets/baltika.png'
 
 
 
 
 
 export const EachBeer= (props) => {
+    AOS.init();
+
 
     const dispatch = useDispatch()
     const navigate = useNavigate();
@@ -24,8 +27,8 @@ export const EachBeer= (props) => {
 
 
     let changeText = (text) => {
-        let maxlength = 140 ; //количество символов, которое должно отображаться
-        let strNum = text.length; //количество блоков с классом text
+        let maxlength = 140 ;
+        let strNum = text.length;
         if(strNum > maxlength){
             for (let i = 0; i < strNum; i++) {
                 text = text.slice(0, maxlength) + '...';
@@ -38,9 +41,10 @@ export const EachBeer= (props) => {
         dispatch(actions.putId(id))
         navigate(`/exactBeer`);
     }
-    return <div className={classes.eachBeer} >
+
+    return <div className={window.innerWidth > 800 ? classes.eachBeer : classes.eachBeerMobile} onClick={() => redir(props.id)} data-aos="fade-right">
           <div>
-              <img alt={'sorry image not found'} src={props.posterImage} className={classes.png} onClick={() => redir(props.id)}/>
+              <img alt={'sorry image not found'} src={props.posterImage === null ? baltika : props.posterImage} className={classes.png} />
           </div>
        <div className={classes.descr}>
            <h2 > <span className={classes.name}> {props.name === undefined? "can't find name" : props.name} </span> </h2>

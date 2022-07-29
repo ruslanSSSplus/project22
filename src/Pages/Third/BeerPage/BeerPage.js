@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import classes from "./Beer.module.css";
+import React from 'react';
+import classes from "./BeerPage.module.css";
 import {useSelector} from "react-redux";
-
-
+import sveti from "../../../Assets/svetlay.png";
+import { Navigate } from "react-router-dom";
 
 
 
@@ -14,15 +14,31 @@ export const BeerPage= () => {
 
     let exactBeer = beers.find(beer => beer.id === idExactBeer)
 
-    return <div className={classes.exactBeer} >
-          <img src={exactBeer.image_url}/>
-        <h1> {exactBeer.name}</h1>
-        <h2> {exactBeer.description} </h2>
-        <h2> {exactBeer.food_pairing} </h2>
-        <h2> {exactBeer.tagline}</h2>
-        <h2> {exactBeer.abv}</h2>
 
-    </div>
+    return (idExactBeer === 0 ? <Navigate to="/Beer" replace={true} /> :
+        <div className={window.innerWidth > 800 ? classes.exactBeer : classes.exactBeerMobile} >
+
+        <img src={exactBeer.image_url} alt={'img'} className={window.innerWidth > 800 ?
+            classes.imgBeer :  classes.imgBeerMobile}/>
+        <div  className={classes.name}> {exactBeer.name}</div>
+        <div className={classes.info}>
+            <span className={classes.txt}> Описание </span>
+            <div  className={classes.description}> {exactBeer.description} </div>
+
+            <span className={classes.txt}> Лучше употреблять с </span>
+            <div  className={classes.food_pairing}> {exactBeer.food_pairing} </div>
+
+            <span className={classes.txt}> Наш слоган </span>
+            <div  className={classes.tagline}> {exactBeer.tagline}</div>
+
+            <span className={classes.txt}> Содержание алкоголя в % </span>
+            <div  className={classes.abv}> {exactBeer.abv}</div>
+        </div>
+
+
+    <img src={sveti} className={classes.png} alt={'png'}/>
+
+    </div>)
 
 }
 

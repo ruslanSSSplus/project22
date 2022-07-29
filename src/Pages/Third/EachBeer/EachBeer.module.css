@@ -1,12 +1,12 @@
-.png
-{
-    width: 140px;
-    height: 200px;
-}
+
 .eachBeer{
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 46px -12px rgba(34, 60, 80, 0.5);
     display: grid;
-    width: 100%;
+    width: 70%;
     height: 100%;
+    margin-left: 15%;
     margin-top: 15px;
 
     grid-template-areas:
@@ -14,48 +14,32 @@
 
     grid-template-columns: 200px 1fr ;
     grid-gap: 15px;
-
 }
+
 .descr{
+    font-size: 25px;
    padding-top: 30px;
 }
-.des{
-    color: grey;
-}
-
 
 
 .name
 {
     color: red;
-    font-size: 25px;
+    font-size: 40px;
 }
 .png
 {
     margin-left: 40px;
     margin-top: 12px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.form
-{
-    margin-left: 40px;
-}
-.paginator
-{
-    margin-left: 40px;
-    margin-bottom: 10px;
-}
-.all{
-    padding-top: 20px;
-
+    width: 140px;
+    height: 200px;
 }
 
-.png1{
-    top: 0;
-    right: 0;
-    margin-top: 40px;
-    position: fixed;
-    height: 1060px;
-    overflow:hidden;
-    z-index: -1;
+.eachBeerMobile{
+    text-align: center;
+    width: 94%;
+    margin-left: 3%;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 46px -12px rgba(34, 60, 80, 0.5);
 }

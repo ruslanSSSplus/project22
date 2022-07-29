@@ -1,70 +1,18 @@
-
-.all {
-    display: grid;
-
-    height: 100%;
-    grid-template-areas:
-  'l '
-  'g';
-    grid-template-rows: 400px 1fr;
-    animation-name: animereveal;
-    animation-duration: 2s;
-}
-
-@keyframes animereveal {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.allDay {
-    color: white;
-}
-
-
-.info {
-    display: grid;
-    height: 100%;
-    grid-template-areas:
-  'g p b';
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.jpg {
-    grid-area: l;
-    width: 100%;
-}
-
-.gen {
-    margin-top: 300px;
-    width: 100%;
-    grid-area: g;
-}
-
-.pravila {
+.all{
+    font-size: 20px;
+    color: grey;
     text-align: center;
-    font-size: 31px;
-    grid-area: p;
-    transform: translate(0px, 0px);
-    transition: all 0.8s ease 0s;
 }
+.blockImg{
+    margin-top: 15px;
+    text-align: center;
 
-.beer {
-    margin-top: 300px;
-    width: 100%;
-    grid-area: b;
 }
-
-.reglament {
-    font-size: 50px;
-    color: #e3cd93;
+.img{
+    width: 99vw;
+    max-width: 800px;
+    max-height: 780px;
 }
-
-.light {
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+.inp{
+    text-align: center;
 }

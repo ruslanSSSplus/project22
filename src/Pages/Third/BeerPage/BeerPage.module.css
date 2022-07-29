@@ -1,56 +1,72 @@
-.png
-{
-    width: 140px;
-    height: 200px;
-}
-.eachBeer{
+.exactBeer{
+    margin-left: 30px;
     display: grid;
-    width: 100%;
+    width: 95%;
     height: 100%;
     margin-top: 15px;
 
     grid-template-areas:
-    'a i';
-
-    grid-template-columns: 200px 1fr ;
+    'n n'
+    'i s';
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 100px 1fr;
     grid-gap: 15px;
-
 }
-.descr{
-   padding-top: 30px;
+.exactBeerMobile{
+    text-align: center;
+    margin-left: 2%;
+    display: grid;
+    width: 96%;
+    height: 100%;
+    margin-top: 15px;
+
+    grid-template-areas:
+    'n'
+    'i'
+    's';
+    grid-template-rows: 50px 500px 1fr;
+    grid-gap: 15px;
 }
-.des{
-    color: grey;
+.imgBeerMobile{
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 500px;
 }
+.info{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    grid-area: s;
+}
+.imgBeer{
+    max-height: 800px;
+    margin-left: 5%;
+    grid-area: i;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    grid-area: n;
+    text-align: center;
+}
+.description{
 
+    grid-area: d;
+}
+.food_pairing{
+    grid-area: f;
+}
+.tagline{
+    grid-area: t;
+}
+.abv{
+    grid-area: a;
+}
+.txt{
 
-
-.name
-{
     color: red;
-    font-size: 25px;
 }
-.png
-{
-    margin-left: 40px;
-    margin-top: 12px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.form
-{
-    margin-left: 40px;
-}
-.paginator
-{
-    margin-left: 40px;
-    margin-bottom: 10px;
-}
-.all{
-    padding-top: 20px;
-
-}
-
-.png1{
+.png{
     top: 0;
     right: 0;
     margin-top: 40px;

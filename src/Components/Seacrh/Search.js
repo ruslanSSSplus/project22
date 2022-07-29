@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './Beer.module.css'
+import classes from './Seacrh.module.css'
 
 
 
