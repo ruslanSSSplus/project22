@@ -13,7 +13,7 @@ export const AllLinks = () => {
         <Link to="/Main">Yes/No</Link>
         </span>
         <span className={classes.elem2} >
-            <Link to='/Second'>Dogs</Link>
+            <Link to='/MinionTranslator'>Minion</Link>
         </span>
         <span className={classes.elem3} >
             <Link to='/Beer'>Beer</Link>

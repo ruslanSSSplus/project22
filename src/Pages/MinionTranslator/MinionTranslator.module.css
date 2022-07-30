@@ -1,0 +1,29 @@
+.inp{
+    text-align: center;
+}
+.all{
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+margin-top: 20px;
+}
+.transText{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.icon{
+    font-size: 30px;
+}
+.png1{
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-top: 40px;
+    position: fixed;
+    overflow:hidden;
+    z-index: -1;
+}
+.ang{
+    color: red;
+}
