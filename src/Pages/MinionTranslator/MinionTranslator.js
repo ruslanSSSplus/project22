@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Field, Form, Formik} from "formik";
 import classes from "./MinionTranslator.module.css";
 
@@ -10,6 +10,10 @@ import minion from "../../Assets/pngwing.com.png";
 
 export const MinionTranslator = (props) => {
 
+    useEffect(() => {
+        let a = minionAPI('hello')
+        console.log(a)
+    })
 
     function speak(text) {
         if(typeof text !== "string"){
@@ -32,10 +36,11 @@ export const MinionTranslator = (props) => {
         textToSound: '',
     }
 
-    const onSubmit = (values, {resetForm}) => {
+    const onSubmit = async (values, {resetForm}) => {
+        console.log()
         if(values.textToTranslate !== ''){
             try{
-                let a = minionAPI(values.textToTranslate)
+               let a = await minionAPI(values.textToTranslate)
                 setTranslatedText(a.contents.translated)
             } catch (e){
                 setTranslatedText('К сожалению превышен лимит, АПИ позволяет переводить всего 5 раз в сутки')
